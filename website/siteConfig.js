@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Sipeno', // Title for your website.
-  tagline: 'Sistem Penilaian Otomatis',
+  tagline: 'Fokus Mengajar, biarkan Sistem yang Menilai',
   url: 'http://sipeno.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -39,7 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'git', label: 'Modul Ajar'},
-    {doc: 'doc4', label: 'Panduan'},
+    {doc: 'help', label: 'Panduan'},
   ],
 
   // If you have users set above, you add it here:
