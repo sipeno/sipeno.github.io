@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Panduan untuk Pengajar · Sipeno</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Pada bagian ini akan dibahas mengenai panduan untuk penggunaan sistem dari sudut"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Panduan untuk Pengajar · Sipeno"/><meta property="og:type" content="website"/><meta property="og:url" content="http://sipeno.github.io/"/><meta property="og:description" content="Pada bagian ini akan dibahas mengenai panduan untuk penggunaan sistem dari sudut"/><meta property="og:image" content="http://sipeno.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://sipeno.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Sipeno"/><h2 class="headerTitleWithLogo">Sipeno</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/git" target="_self">Modul Ajar</a></li><li class="siteNavItemActive"><a href="/docs/help" target="_self">Panduan</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Panduan untuk Pengajar</h1></header><article><div><span><p>Pada bagian ini akan dibahas mengenai panduan untuk penggunaan sistem dari sudut
+pandang pengajar. Sebelum melanjutkan diharapkan pengajar telah memiliki
+kemampuan dasar berikut untuk memudahkan penggunaan sistem Sipeno.</p>
+<ol>
+<li>Dapat mengoperasikan aplikasi terminal pada sistem operasi, baik itu terminal
+pada unix atau cmd di Windows.</li>
+<li>Perangkat lunak versioning git telah terpasang pada piranti masing-masing.</li>
+<li>Memahami konsep dan perintah dasar git (init, add, commit, push dan pull).</li>
+<li>Memiliki akun GitHub.</li>
+<li>Memiliki akun organisasi GitHub untuk digunakan dalam GitHub Classroom.</li>
+<li>Memahami konsep unit testing atau instrument testing.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="pengaturan-awal"></a><a href="#pengaturan-awal" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pengaturan Awal</h2>
+<p>Untuk menggunakan sistem penilaian otomatis, silahkan lakukan registrasi akun
+GitHub terlebih dahulu pada tautan <a href="https://github.com/join">Join GitHub</a> (jika
+belum mempunyai akun GitHub). Ikuti langkah-langkah isian yang diperlukan,
+kemudian pastikan anda telah masuk ke dalam dashboard GitHub. Jika anda telah
+memiliki akun GitHub maka anda dapat melewati tahapan ini dan dilanjutkan ke
+tahapan untuk membuat akun organisasi.</p>
+<p>Pada dashboard GitHub, perhatikan menu di bagian pojok kanan dengan icon <code>+</code>.
+Klik menu tersebut kemudian sorot menut <code>New organization</code>.</p>
+<p><img src="/img/menu-github.png" alt="Menu Github"></p>
+<p>Langkah berikutnya silahkan pilih plan yang diinginkan. Jika kebutuhan anda
+dalam skala kecil, silahkan pilih plan yang gratis dengan menekan tombol <strong>Join
+for free</strong> pada plan yang paling kiri.</p>
+<p><img src="/img/github-plan.png" alt="GitHub Plan"></p>
+<p>lengkapi form isian sesuai dengan kebutuhan. Silahkan pilih nama organisasi yang
+unique, dan lengkapi juga dengan email anda. Jika organisasi ini untuk kebutuhan
+pribadi silahkan pilih <strong>My Personal account</strong> jika tidak silahkan pilihan
+lainnya. Lengkapi form isian yang masih dibutuhkan. Pada gambar berikut adalah
+contoh pengisian form untuk organisasi baru.</p>
+<p><img src="/img/new-organization.png" alt="New Organization"></p>
+<h2><a class="anchor" aria-hidden="true" id="pengaturan-github-classroom"></a><a href="#pengaturan-github-classroom" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pengaturan GitHub Classroom</h2>
+<p>GitHub Classroom merupakan learning management system yang berbasiskan Git.
+Dengan GitHub Classroom anda dapat mengelola tugas-tugas dalam repository git.
+Silahkan buka tautan <a href="https://classroom.github.com">https://classroom.github.com</a> dan lakukan login dengan akun
+GitHub anda.</p>
+<p><img src="/img/github-classroom.png" alt="Github Classroom"></p>
+<p>Tekan tombol <strong>New classroom</strong> atau anda dapat mengakses tautan
+<a href="https://classroom.github.com/classrooms/new">https://classroom.github.com/classrooms/new</a> untuk membuat classroom baru. Pada
+halaman perambah anda akan ditampilkan daftar organisasi yang telah terhubung
+dengan GitHub Classroom. Jika nama organisasi anda tidak tampil, silahkan akses
+tautan [grant us access]. Pilih nama organisasi yang diinginkan. Ikuti langkah
+wizard yang dibutuhkan.</p>
+<p>Untuk membuat classroom baru dibutuhkan nama, silahkan beri nama sesuai dengan
+kebutuhan.</p>
+<p>Sebagai langkah selanjutnya, jika dalam mengajar terdapat team teaching anda
+dapat mengundang pengajar pada form berikutnya.</p>
+<p>Selain itu GitHub classroom terdapat juga integrasi dengan platform LMS lainnya,
+seperti Google classroom, moodle, canvas dan lainnya.</p>
+<p>Setelah muncul tampilan seperti gambar di bawah, maka anda sudah siap untuk
+memberikan penugasan dengan menggunakan GitHub classroom.</p>
+<h2><a class="anchor" aria-hidden="true" id="penugasan-dengan-github-classroom"></a><a href="#penugasan-dengan-github-classroom" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Penugasan dengan GitHub Classroom</h2>
+<p>Untuk membuat penugasan dengan GitHub Classroom silahkan tekan tombol <em>Create an
+assignment</em>*. Kemudian lengkapi isian pada form yang tampil. Sebuah tugas
+membutuhkan nama, deadline (bersifat opsional), jenis tugas individu atau
+berkelompok, sifat repository private atau public, serta status hak akses
+terkait pengaturan admin pada repository. Lengkapi isian seperti pada gambar
+berikut. Kemudian tekan tombol <strong>Continue</strong> untuk lanjut ke langkah berikutnya.</p>
+<p><img src="/img/assignments-basic.png" alt="Assignments Basic"></p>
+<p>Pada tahapan berikutnya terdapat pengaturan terkait starter code dan IDE online.
+Lengkapi starter code yang berupa repository project template. Dalam starter
+code terdapat unit test serta workflow untuk proses penilaian. Jika anda belum
+mempunyai starter code, silahkan gunakan <code>sipeno/skorbola-starter</code> sebagai
+isian. Kemudian tekan tombol <strong>Continue</strong> untuk lanjut ke langkah berikutnya.</p>
+<p><img src="/img/starter-code.png" alt="Starter Code"></p>
+<p>Pada langkah berikutnya berkaitan dengan grading. Karena dalam penilaian ini
+digunakan custom grading, silahkan lewati langkah ini. Saat ini GitHub Classroom
+sudah mendukung untuk penilaian project sederhana seperti Java, NodeJS dan
+lain-lain.</p>
+<p>Penugasan GitHub Classroom berupa undangan URL yang dapat dibagikan. Silahkan
+salin undangan dengan menekan tombol <strong>Copy invitation link</strong>, kemudian bagikan
+kepada mahasiswa anda.</p>
+<p><img src="/img/invitation-url.png" alt="URL Invitation"></p>
+<p>Undangan URL ketika dibuka akan menampilkan sebuah form konfirmasi untuk
+menerima penugasan yang diberikan. Silahkan tekan tombol <strong>Accept this
+assignment</strong> untuk melanjutkan. GitHub Classroom secara otomatis akan membuatkan
+repository baru dengan format <code>&lt;organisasi&gt;/&lt;tugas&gt;-&lt;username&gt;</code> dan juga
+menyiapkan code yang disalin dari starter code. Sebagai langkah akhir, silahkan
+clone repository yang telah disiapkan.</p>
+<p><img src="/img/accept-this-assignment.png" alt="Accept this assignment"></p>
+<h2><a class="anchor" aria-hidden="true" id="menyiapkan-starter-code"></a><a href="#menyiapkan-starter-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Menyiapkan Starter Code</h2>
+<p>Pada langkah penugasan GitHub Classroom telah disinggung terkait starter code.
+Starter Code dibutuhkan untuk menyiapkan tugas yang akan diselesaikan dan juga
+sebagai dasar penilaian. Dalam starter code setidaknya terdiri dari tiga
+bagian, yaitu:</p>
+<ul>
+<li>GitHub Workflow</li>
+<li>Instrument Test</li>
+<li>Code</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="menyiapkan-github-workflow"></a><a href="#menyiapkan-github-workflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Menyiapkan GitHub Workflow</h3>
+<p>GitHub Workflow merupakan CI/CD yang dikembangkan oleh GitHub. Format
+penulisannya menggunakan yaml. Dalam workflow didefinisikan proses-proses yang
+akan dilakukan jika terdapat kondisi yang dipenuhi ketika terjadi git event.
+Sebagai contoh pada workflow di bawah akan dieksekusi jika ada event <code>push</code> pada
+branch <code>master</code>.</p>
+<pre><code class="hljs css language-yml"><span class="hljs-attr">name:</span> <span class="hljs-string">Run</span> <span class="hljs-string">Sipeno</span> <span class="hljs-string">Checks</span>
+
+<span class="hljs-attr">on:</span>
+  <span class="hljs-attr">push:</span>
+    <span class="hljs-attr">branches:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">master</span>
+
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">test:</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Run</span> <span class="hljs-string">Espresso</span> <span class="hljs-string">Tests</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">macOS-latest</span>
+
+    <span class="hljs-attr">steps:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">JDK</span> <span class="hljs-number">1.8</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-java@v1</span>
+        <span class="hljs-attr">with:</span>
+          <span class="hljs-attr">java-version:</span> <span class="hljs-number">1.8</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Run</span> <span class="hljs-string">unit</span> <span class="hljs-string">tests</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">reactivecircus/android-emulator-runner@v2</span>
+        <span class="hljs-attr">with:</span>
+          <span class="hljs-attr">api-level:</span> <span class="hljs-number">29</span>
+          <span class="hljs-attr">script:</span> <span class="hljs-string">./gradlew</span> <span class="hljs-string">connectedCheck</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="menyiapkan-instrument-test"></a><a href="#menyiapkan-instrument-test" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Menyiapkan Instrument Test</h3>
+<p>Untuk menentukan apakah project yang dikerjakan sudah sesuai, dibutuhkan
+instrument test. Pada sistem ini digunakan library <code>espresso</code>. Pada contoh di
+bawah terdapat definisi test yang akan mencocokan hasil output apakah bernilai
+<code>1</code> jika tombol tambah ditekan. Secara singkat bagian ini dapat dianalogikan
+sebagai kunci jawaban.</p>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivityTest</span> </span>{
+
+    <span class="hljs-meta">@Rule</span>
+    <span class="hljs-keyword">public</span> ActivityScenarioRule&lt;MainActivity&gt; mActivityScenarioRule =
+    <span class="hljs-keyword">new</span> ActivityScenarioRule&lt;MainActivity&gt;(MainActivity<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">increaseScoreHomeTest</span><span class="hljs-params">()</span> </span>{
+        onView(withId(R.id.btn_increase_home))
+            .perform(click());
+        onView(withId(R.id.txt_home_score))
+            .check(matches(withText(<span class="hljs-string">"1"</span>)));
+    }
+
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="menyiapkan-code"></a><a href="#menyiapkan-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Menyiapkan Code</h3>
+<p>Ada kalanya akan mahasiswa akan mengalami kesulitan jika project yang dikerjakan
+harus dibangun dari awal. Sehingga untuk mengatasi masalah ini, dapat disiapkan
+code dasar. Mahasiswa cukup melanjutkan hal teknis apa yang belum
+diimplementasikan.</p>
+<h2><a class="anchor" aria-hidden="true" id="repository-github"></a><a href="#repository-github" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Repository GitHub</h2>
+<p>Starter code yang telah disiapkan selanjutnya harus diletakkan ke dalam
+repository GitHub. Untuk melakukan ini silahkan gunakan konsep dan perintah pada
+Git.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#pengaturan-awal">Pengaturan Awal</a></li><li><a href="#pengaturan-github-classroom">Pengaturan GitHub Classroom</a></li><li><a href="#penugasan-dengan-github-classroom">Penugasan dengan GitHub Classroom</a></li><li><a href="#menyiapkan-starter-code">Menyiapkan Starter Code</a><ul class="toc-headings"><li><a href="#menyiapkan-github-workflow">Menyiapkan GitHub Workflow</a></li><li><a href="#menyiapkan-instrument-test">Menyiapkan Instrument Test</a></li><li><a href="#menyiapkan-code">Menyiapkan Code</a></li></ul></li><li><a href="#repository-github">Repository GitHub</a></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Hak Cipta © 2020 Dian Hanifudin Subhi dibangun dengan Docusaurus</section></footer></div></body></html>
