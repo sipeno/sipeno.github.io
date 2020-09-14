@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Project Skor Bola · Sipeno</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Skor Bola"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Project Skor Bola · Sipeno"/><meta property="og:type" content="website"/><meta property="og:url" content="http://sipeno.github.io/"/><meta property="og:description" content="# Skor Bola"/><meta property="og:image" content="http://sipeno.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://sipeno.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Sipeno"/><h2 class="headerTitleWithLogo">Sipeno</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/docs" target="_self">Modul Ajar</a></li><li class=""><a href="/docs/doc4" target="_self">Panduan</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Modul Ajar</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Modul Ajar</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/docs">Modul Ajar</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/project">Project Skor Bola</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Project Skor Bola</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="skor-bola"></a><a href="#skor-bola" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Skor Bola</h1>
+<h2><a class="anchor" aria-hidden="true" id="alat-dan-bahan"></a><a href="#alat-dan-bahan" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Alat dan Bahan</h2>
+<ol>
+<li>Laptop atau PC</li>
+<li>Android Studio</li>
+<li>Akun <a href="https://github.com">GitHub</a></li>
+<li>Starter Code <a href="https://classroom.github.com/a/KJX8Gmyu">Skor Bola Starter</a>
+pada GitHub Classroom.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="praktikum"></a><a href="#praktikum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Praktikum</h2>
+<ul>
+<li><p>Pastikan anda telah menerima tugas (Accept the assignment) tautan pada GitHub
+Classroom. Tunggu sampai dengan proses import selesai.</p></li>
+<li><p>Bukalah layout <code>activity_main.xml</code>, dan pelajari desain layout yang telah
+disediakan. Dalam desain terdapat tampilan untuk tim Home dan tim Away. Untuk
+masing-masing tim terdapat tombol untuk menambah skor dan mengurangi skor jika
+terjadi kesalahan input. Dan juga terdapat sebuah tombol untuk me-<em>reset</em> skor
+ke semula.</p></li>
+<li><p>Pada bagian layout, perhatikan id untuk masing-masing view/widget yang dapat
+dipaparkan pada tabel di bawah. Pada tabel tersebut mengandung informasi dari
+layout yang diperlukan untuk dihubungkan dalam <code>Activity</code>.</p></li>
+</ul>
+<table>
+<thead>
+<tr><th>id</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td>txt_home_score</td><td>TextView</td></tr>
+<tr><td>txt_away_score</td><td>TextView</td></tr>
+</tbody>
+</table>
+<ul>
+<li>Bukalah file <code>MainActivity.java</code>, pelajari struktur dasar terkait <code>Activity</code>.
+Kemudian dari tabel yang telah dijabarkan dalam layout, dapat dijabarkan
+menjadi atribut-atribut sebagai berikut.</li>
+</ul>
+<table>
+<thead>
+<tr><th>Variable</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td>homeScoreText</td><td>TextView</td></tr>
+<tr><td>awayScoreText</td><td>TextView</td></tr>
+</tbody>
+</table>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+  <span class="hljs-keyword">private</span> TextView homeScoreText;
+  <span class="hljs-keyword">private</span> TextView awayScoreText;
+
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+}
+</code></pre>
+<ul>
+<li>Lakukan proses binding dengan menggunakan method <code>findViewById</code> sehingga hasil
+kode akhir menjadi seperti berikut.</li>
+</ul>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+  <span class="hljs-keyword">private</span> TextView homeScoreText;
+  <span class="hljs-keyword">private</span> TextView awayScoreText;
+
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    <span class="hljs-comment">// proses binding</span>
+    homeScoreText = findViewById(R.id.txt_home_score);
+    awayScoreText = findViewById(R.id.txt_away_score);
+    }
+
+}
+</code></pre>
+<ul>
+<li>Pada aplikasi skor bola dibutuhkan pemodelan data untuk menampilkan nilai skor
+baik untuk tim Home maupun tim Away. Nilai skor berjenis angka, sehingga
+dibutuhkan tipe data integer. Tambahkan atribut pada file <code>MainActivity.java</code>
+sehingga kode akhir menjadi seperti berikut.</li>
+</ul>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+  <span class="hljs-keyword">private</span> TextView homeScoreText;
+  <span class="hljs-keyword">private</span> TextView awayScoreText;
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> homeScore;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> awayScore;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    <span class="hljs-comment">// proses binding</span>
+    homeScoreText = findViewById(R.id.txt_home_score);
+    awayScoreText = findViewById(R.id.txt_away_score);
+    homeScore = <span class="hljs-number">0</span>;
+    awayScore = <span class="hljs-number">0</span>;
+    }
+
+}
+</code></pre>
+<ul>
+<li>Buka kembali layout <code>activity_main.xml</code>, dan ubah mode tampilan menjadi code.
+Pada langkah ini akan ditambahkan interaksi click melalui property
+<code>android:onClick</code>. Modifikasi code sehingga tampilan akhir menjadi seperti
+berikut.</li>
+</ul>
+<pre><code class="hljs css language-xml"><span class="hljs-meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">".MainActivity"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/label_home"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"Home"</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"36sp"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">"@+id/txt_home_score"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">"parent"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/label_away"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"Away"</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"36sp"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">"@+id/txt_away_score"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/txt_home_score"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">"20dp"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"0"</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"72sp"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">"@+id/btn_reset"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">"parent"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/txt_away_score"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"0"</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"72sp"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">"@+id/btn_reset"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/btn_reset"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">"handleReset"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"Reset"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">"parent"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/btn_increase_home"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">"handleIncreaseHomeScore"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"+1"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">"@+id/btn_reset"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toEndOf</span>=<span class="hljs-string">"@+id/txt_home_score"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">"parent"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/btn_decrease_home"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">"handleDecreaseHomeScore"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"-1"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">"@+id/btn_reset"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toStartOf</span>=<span class="hljs-string">"@+id/txt_home_score"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">"parent"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/btn_increase_away"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">"handleIncreaseAwayScore"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"+1"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toEndOf</span>=<span class="hljs-string">"@+id/txt_away_score"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">"@+id/btn_reset"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/btn_decrease_away"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">"24dp"</span>
+        <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">"handleDecreaseAwayScore"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"-1"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toStartOf</span>=<span class="hljs-string">"@+id/txt_away_score"</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">"parent"</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">"@+id/btn_reset"</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p>Pada aplikasi Android Studio dalam layout <code>activity_main.xml</code> akan muncul
+garis warna merah, untuk masing-masing tombol silahkan tekan tombol shortcut
+<code>Alt+Enter</code>. Android Studio akan meng-<em>generate</em> method dalam
+<code>MainActivity.java</code> yang telah terhubung dengan layout.</p></li>
+<li><p>Jika langkah-langkah anda benar, maka hasil akhir dalam file
+<code>MainActivity.java</code> akan menjadi seperti berikut.</p></li>
+</ul>
+<blockquote>
+<p>Urutan lokasi method-method tidak harus sama, selama tidak ada kesalahan dalam
+penulisan sintaks kode tidak menjadi masalah.</p>
+</blockquote>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+    <span class="hljs-keyword">private</span> TextView homeScoreText;
+    <span class="hljs-keyword">private</span> TextView awayScoreText;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> homeScore;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> awayScore;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        homeScoreText = findViewById(R.id.txt_home_score);
+        awayScoreText = findViewById(R.id.txt_away_score);
+        homeScore = <span class="hljs-number">0</span>;
+        awayScore = <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleDecreaseHomeScore</span><span class="hljs-params">(View view)</span> </span>{
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleIncreaseHomeScore</span><span class="hljs-params">(View view)</span> </span>{
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleDecreaseAwayScore</span><span class="hljs-params">(View view)</span> </span>{
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleIncreaseAwayScore</span><span class="hljs-params">(View view)</span> </span>{
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleReset</span><span class="hljs-params">(View view)</span> </span>{
+    }
+}
+</code></pre>
+<ul>
+<li>Ketika tombol <code>-1</code> pada tim Home ditekan maka skor yang akan ditampilkan
+berkurang satu dari nilai semula. Kemudian nilai skor yang baru ditampilkan
+pada tampilan TextView. Proses ini dilakukan jika nilai skor sebelumnya bukan
+<code>0</code>. Dari logika tersebut, dapat diubah menjadi kode java berikut.</li>
+</ul>
+<pre><code class="hljs css language-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleDecreaseHomeScore</span><span class="hljs-params">(View view)</span> </span>{
+        <span class="hljs-keyword">if</span> (homeScore &gt; <span class="hljs-number">0</span>) {
+            homeScore--;
+            homeScoreText.setText(String.valueOf(homeScore));
+        }
+}
+</code></pre>
+<ul>
+<li>Ketika tombol <code>+1</code> pada tim Home ditekan maka skor yang akan ditampilkan
+bertambah satu dari nilai semula. Kemudian nilai skor yang baru ditampilkan
+pada tampilan TextView. Dari logika tersebut, dapat diubah menjadi kode java
+berikut.</li>
+</ul>
+<pre><code class="hljs css language-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleIncreaseHomeScore</span><span class="hljs-params">(View view)</span> </span>{
+        homeScore++;
+        homeAwayText.setText(String.valueOf(homeScore));
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="challenge"></a><a href="#challenge" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Challenge</h2>
+<ul>
+<li>Selesaikan logika untuk implementasi nilai skor pada tim Away dan implementasi
+fungsi reset skor.</li>
+</ul>
+<blockquote>
+<p>Jangan lupa melakukan commit dan push ke repository GitHub yang telah disiapkan.
+Jika anda mendapatkan tanda hijau pada proses build, berarti anda telah berhasil
+menyelesaikan semua fungsional project ini.</p>
+</blockquote>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/docs"><span class="arrow-prev">← </span><span>Modul Ajar</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#alat-dan-bahan">Alat dan Bahan</a></li><li><a href="#praktikum">Praktikum</a></li><li><a href="#challenge">Challenge</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.ico" alt="Sipeno" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/doc1.html">Getting Started (or other categories)</a><a href="/docs/doc2.html">Guides (or other categories)</a><a href="/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Hak Cipta © 2020 Dian Hanifudin Subhi</section></footer></div></body></html>
