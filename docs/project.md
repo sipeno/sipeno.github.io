@@ -310,7 +310,7 @@ berikut.
 ```java
 public void handleIncreaseHomeScore(View view) {
 		homeScore++;
-		homeAwayText.setText(String.valueOf(homeScore));
+		homeScoreText.setText(String.valueOf(homeScore));
 }
 ```
 
